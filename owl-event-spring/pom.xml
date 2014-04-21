@@ -1,0 +1,45 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+		<groupId>net.jupic</groupId>
+		<artifactId>owl</artifactId>
+		<version>1.0.0-SNAPSHOT</version>
+	</parent>
+	<artifactId>owl-spring</artifactId>
+	
+	<properties>
+        <version.java>1.7</version.java>
+        <version.springframework>3.1.1.RELEASE</version.springframework>
+        <version.aspectj>1.6.12</version.aspectj>
+        <version.slf4j>1.6.6</version.slf4j>
+        <lang.encoding>UTF-8</lang.encoding>
+    </properties>
+    
+	<dependencies>
+        <dependency>
+        	<groupId>net.jupic</groupId>
+        	<artifactId>owl-model</artifactId>
+        	<version>${project.version}</version>
+        </dependency>
+        
+		<!-- springframework -->
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-context</artifactId>
+            <version>${version.springframework}</version>
+            <exclusions>
+                <!-- Exclude Commons Logging in favor of SLF4j -->
+                <exclusion>
+                    <groupId>commons-logging</groupId>
+                    <artifactId>commons-logging</artifactId>
+                </exclusion>
+            </exclusions>
+        </dependency>
+        
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-test</artifactId>
+            <version>${version.springframework}</version>
+        </dependency>
+	</dependencies>
+</project>
