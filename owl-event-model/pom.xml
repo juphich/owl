@@ -8,9 +8,10 @@
     <artifactId>owl-model</artifactId>
     
     <dependencies>
-        <!-- <dependency>
-            <groupId>com.estgames</groupId>
-            <artifactId>common-utils</artifactId>
-        </dependency> -->
+        <dependency>
+            <groupId>net.toolab</groupId>
+            <artifactId>toolab-http</artifactId>
+            <version>1.0.0-SNAPSHOT</version>
+        </dependency>
     </dependencies>
 </project>

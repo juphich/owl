@@ -8,18 +8,18 @@ import java.util.regex.Pattern;
 
 import net.owl.action.exception.ActionException;
 import net.owl.action.exception.WebApiInvocationException;
-import net.owl.commons.exception.NotAPojoException;
-import net.owl.commons.http.HttpRequesterFactory;
-import net.owl.commons.http.context.GetRequestContext;
-import net.owl.commons.http.context.HttpRequestContext;
-import net.owl.commons.http.context.PostRequestContext;
-import net.owl.commons.http.exception.HttpRequestException;
-import net.owl.commons.http.exception.RequesterCreationException;
-import net.owl.commons.http.exception.UnsupportedRequestException;
-import net.owl.commons.utils.ReflectionUtils;
 import net.owl.log.EventLog;
 import net.owl.log.GenericLogWriter;
 import net.owl.log.LogWriter;
+import net.toolab.http.HttpRequesterFactory;
+import net.toolab.http.context.GetRequestContext;
+import net.toolab.http.context.HttpRequestContext;
+import net.toolab.http.context.PostRequestContext;
+import net.toolab.http.exception.HttpRequestException;
+import net.toolab.http.exception.RequesterCreationException;
+import net.toolab.http.exception.UnsupportedRequestException;
+import net.toolab.utils.ReflectionUtils;
+import net.toolab.utils.exception.NotAPojoException;
 
 import org.apache.http.client.HttpResponseException;
 
